@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="game_board.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Digital-7&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="message">
+        <p id="winner"></p>
+    </div>
+    <div class="container">
+        <div class="score">
+            <div class="home_Score">
+                <h2>HOME</h2>
+                <div id="screen1" onclick="add_Num()">0</div>
+
+            </div>
+    
+            <div class="guest_Score">
+                <h2>GUEST</h2>
+                <div id="screen2" onclick="add_Num2()">0</div>
+
+            </div>
+        </div>
+        <div class="timer">
+            <div id="screen_Timer" onclick="startTimer()">00:00</div>
+        </div>
+    </div>
+    <div class="buttons">
+        <button class="btn_1" onclick="end_game()">End game</button>
+        <button class="btn_2" onclick="next_game()" >Next game</button>
+    </div>
+
+   
+
+    <script src="game_board.js"></script>
+</body>
+</html>
